@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Carrito de compras - Video Game Universe. Revisa tus productos seleccionados y finaliza tu compra.">
+    <title>Carrito de Compras | Video Game Universe</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/carrito.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21,6H3C1.9,6,1,6.9,1,8v8c0,1.1,0.9,2,2,2h5.59l-2.3,2.29c-0.39,0.39-0.39,1.02,0,1.41C6.49,21.9,6.74,22,7,22s0.51-0.1,0.71-0.29L10.59,19H13v-2H3V8h18v9h-2v2h2c1.1,0,2-0.9,2-2V8C23,6.9,22.1,6,21,6z"/>
+                    <circle cx="6" cy="11.5" r="1.5"/>
+                    <circle cx="18" cy="11.5" r="1.5"/>
+                </svg>
+                <div>
+                    <h1 class="logo-text">
+                        Video Game <span class="logo-highlight">Universe</span>
+                    </h1>
+                </div>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="./productos.html" class="nav-link">Productos</a></li>
+                    <li><a href="./noticias.html" class="nav-link">Noticias</a></li>
+                    <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn-icon" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </button>
+                <a href="carrito.html" class="btn-icon" aria-label="Carrito de compras">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    <span class="cart-counter" id="cart-count">0</span>
+                </a>
+                <button class="btn-icon" aria-label="Cuenta de usuario">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section hero-cart">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">
+                Tu <span class="hero-highlight">Carrito</span>
+            </h2>
+            <p class="hero-subtitle">Revisa y finaliza tu compra</p>
+        </div>
+    </section>
+
+    <!-- CART SECTION -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-layout">
+                <!-- LISTA DE PRODUCTOS -->
+                <div class="cart-main">
+                    <h2 class="section-title">
+                        <i class="fas fa-shopping-bag"></i>
+                        Productos en tu carrito
+                    </h2>
+
+                    <!-- Empty Cart State -->
+                    <div id="empty-cart" class="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Tu carrito está vacío</h3>
+                        <p>¡Añade algunos juegos increíbles desde nuestro catálogo!</p>
+                        <a href="./productos.html" class="btn-primary">
+                            <i class="fas fa-gamepad"></i>
+                            Explorar Productos
+                        </a>
+                    </div>
+
+                    <!-- Cart Items -->
+                    <div id="cart-list" class="cart-list">
+                        <!-- Los items se cargarán dinámicamente -->
+                    </div>
+                </div>
+
+                <!-- RESUMEN DEL PEDIDO -->
+                <aside class="cart-sidebar">
+                    <div id="cart-summary" class="cart-summary">
+                        <h3 class="summary-title">Resumen del pedido</h3>
+
+                        <div class="summary-row">
+                            <span>Artículos (<span id="items-count">0</span>)</span>
+                            <span id="subtotal">0.00€</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Descuento</span>
+                            <span id="discount" class="discount">0.00€</span>
+                        </div>
+
+                        <div class="summary-row">
+                            <span>Envío</span>
+                            <span id="shipping">4.99€</span>
+                        </div>
+
+                        <div class="promo-code">
+                            <input type="text" id="promo-input" placeholder="Código de descuento" maxlength="20">
+                            <button id="apply-promo" class="btn-apply">Aplicar</button>
+                        </div>
+                        <div id="promo-message" class="promo-message"></div>
+
+                        <div class="summary-divider"></div>
+
+                        <div class="summary-total">
+                            <span>Total</span>
+                            <span id="total" class="total-price">0.00€</span>
+                        </div>
+
+                        <button id="btn-checkout" class="btn-checkout">
+                            <i class="fas fa-lock"></i>
+                            Proceder al Pago
+                        </button>
+
+                        <div class="payment-methods">
+                            <span>Métodos de pago:</span>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                                <i class="fab fa-cc-amex"></i>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL CHECKOUT -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close" aria-label="Cerrar">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <h2 class="modal-title">
+                <i class="fas fa-credit-card"></i>
+                Información de Pago
+            </h2>
+
+            <form id="checkout-form">
+                <div class="form-section">
+                    <h3>Información Personal</h3>
+                    <div class="form-row">
+                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="tel" placeholder="Teléfono" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Dirección de Envío</h3>
+                    <input type="text" placeholder="Dirección" required>
+                    <div class="form-row">
+                        <input type="text" placeholder="Ciudad" required>
+                        <input type="text" placeholder="Código Postal" required>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h3>Método de Pago</h3>
+                    <input type="text" placeholder="Número de tarjeta" required>
+                    <div class="form-row">
+                        <input type="text" placeholder="MM/AA" required>
+                        <input type="text" placeholder="CVV" required>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="btn-cancel" class="btn-secondary">Cancelar</button>
+                    <button type="submit" class="btn-primary">Confirmar Pedido</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- MODAL SUCCESS -->
+    <div id="success-modal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>¡Pedido Realizado!</h2>
+            <p>Tu pedido <strong id="order-number">#VGU-12345678</strong> ha sido procesado correctamente.</p>
+            <p>Recibirás un email de confirmación en breve.</p>
+            <a href="../index.html" class="btn-primary">Volver al Inicio</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2025 Video Game Universe. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/carrito.js"></script>
+</body>
+</html>

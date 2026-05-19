@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo completo de videojuegos en Video Game Universe. Encuentra los mejores juegos con galerías de imágenes y precios actualizados.">
+    <title>Productos - Catálogo de Videojuegos | Video Game Universe</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts - Orbitron & Rajdhani -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <!-- Estilos principales -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/productos.css">
+</head>
+<body>
+    <!-- HEADER CON NAVEGACIÓN STICKY -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo-container">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M21,6H3C1.9,6,1,6.9,1,8v8c0,1.1,0.9,2,2,2h5.59l-2.3,2.29c-0.39,0.39-0.39,1.02,0,1.41C6.49,21.9,6.74,22,7,22s0.51-0.1,0.71-0.29L10.59,19H13v-2H3V8h18v9h-2v2h2c1.1,0,2-0.9,2-2V8C23,6.9,22.1,6,21,6z"/>
+                    <circle cx="6" cy="11.5" r="1.5"/>
+                    <circle cx="18" cy="11.5" r="1.5"/>
+                </svg>
+                <div>
+                    <h1 class="logo-text">
+                        Video Game <span class="logo-highlight">Universe</span>
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Navegación -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="./productos.html" class="nav-link">Productos</a></li>
+                    <li><a href="./noticias.html" class="nav-link">Noticias</a></li>
+                    <li><a href="./contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Acciones del header -->
+            <div class="header-actions">
+                <button class="btn-icon" aria-label="Buscar">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                </button>
+                <a href="carrito.html" class="btn-icon" aria-label="Carrito de compras">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    <span class="cart-counter">0</span>
+                </a>
+                <button class="btn-icon" aria-label="Cuenta de usuario">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION PRODUCTOS -->
+    <section class="hero-section hero-products">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">
+                Catálogo
+                <span class="hero-highlight">Completo</span>
+            </h2>
+            <p class="hero-subtitle">Explora nuestra colección premium de videojuegos</p>
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products-section">
+        <div class="container">
+            <!-- Barra de búsqueda y filtros -->
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                    </svg>
+                    <input type="text" id="searchInput" placeholder="Buscar juegos..." aria-label="Buscar videojuegos">
+                    <button type="button" id="clearSearch" class="clear-btn" aria-label="Limpiar búsqueda">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="filter-group">
+                    <label for="genreFilter" class="filter-label">
+                        <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"/>
+                        </svg>
+                        Género:
+                    </label>
+                    <select id="genreFilter" class="filter-select">
+                        <option value="all">Todos</option>
+                        <option value="accion">Acción</option>
+                        <option value="aventura">Aventura</option>
+                        <option value="terror">Terror</option>
+                        <option value="rpg">RPG</option>
+                    </select>
+                    
+                    <button type="button" id="showFavorites" class="favorites-btn" aria-label="Ver favoritos">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                        <span class="favorites-count">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mensaje de resultados -->
+            <div class="search-results-info" id="searchInfo" role="status" aria-live="polite"></div>
+
+                <div class="products-grid">
+                    
+                    <article class="product-card" data-genre="accion,aventura" data-name="assassins creed shadows" data-price="79.99">
+                        <h2>Assassin's Creed Shadows <span class="price">79,99€</span></h2>
+                        <div class="product-gallery">
+                            <img src="../assets/images/Assassins-Creed-Shadows.jpg" alt="Portada de Assassin's Creed Shadows" loading="lazy">
+                            <img src="../assets/images/assassins-creed-shadows-duo.jpg" alt="Escena de sigilo en el castillo" loading="lazy">
+                            <img src="../assets/images/Assassins-Creed-Shadows-scaled.jpg" alt="Escena de escalada con vistas al castillo" loading="lazy">
+                            <img src="../assets/images/assassins-creed-shadows-atack.jpg" alt="Escena de pelea" loading="lazy">
+                            <img src="../assets/images/assassins-creed-shadows-shadow.jpg" alt="Escena de entre las sombras" loading="lazy">
+                            <img src="../assets/images/assassins-creed-sahdows-landscape.jpg" alt="Escena de vista panorámica" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-genre="accion,aventura" data-name="metal gear solid delta" data-price="79.99">
+                        <h2>Metal Gear Solid Delta <span class="price">79,99€</span></h2>
+                        <div class="product-gallery">
+                            <img src="../assets/images/metal-gear-solid-delta-art.jpg" alt="Portada de Metal Gear Solid Delta" loading="lazy">
+                            <img src="../assets/images/metal-gear-solid-delta-snake.jpg" alt="Escena de Snake" loading="lazy">
+                            <img src="../assets/images/metal-gear-solid-delta-forest.jpg" alt="Escena de bosque" loading="lazy">
+                            <img src="../assets/images/metal-gear-solid-delta-graphic.jpg" alt="Escena de iluminación" loading="lazy">
+                            <img src="../assets/images/metal-gear-solid-delta-croc.jpg" alt="Escena del cocodrilo" loading="lazy">
+                            <img src="../assets/images/metal-gear-solid-delta-bridge.jpg" alt="Escena del puente" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-genre="terror,accion" data-name="resident evil 2 remake" data-price="19.99">
+                        <h2>Resident Evil 2 Remake <span class="price">19,99€</span></h2>
+                        <div class="product-gallery">
+                            <img src="../assets/images/resident-evil-2-remake-art.jpg" alt="Portada de Resident Evil 2 Remake" loading="lazy">
+                            <img src="../assets/images/resident-evil-2-remake-rain.jpg" alt="Escena de lluvia con Leon y Claire" loading="lazy">
+                            <img src="../assets/images/resident-evil-2-remake-commissioner.jpg" alt="Escena de la comisaría" loading="lazy">
+                            <img src="../assets/images/resident-evil-2-remake-rpd.jpg" alt="Escena de la RPD" loading="lazy">
+                            <img src="../assets/images/resident-evil-2-remake-claire.jpg" alt="Escena de Claire" loading="lazy">
+                            <img src="../assets/images/resident-evil-2-remake-npc.jpg" alt="Escena de un perosnaje secundario" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-genre="terror" data-name="until dawn" data-price="79.99">
+                        <h2>Until Dawn <span class="price">79,99€</span></h2>
+                        <div class="product-gallery">
+                            <img src="../assets/images/until-dawn-remake.jpg" alt="Portada de Until Dawn" loading="lazy">
+                            <img src="../assets/images/until-dawn-remake-joke.jpg" alt="Escena de broma a Hannah" loading="lazy">
+                            <img src="../assets/images/until-dawn-remake-mike.jpg" alt="Escena de Mike en el psiquiátrico" loading="lazy">
+                            <img src="../assets/images/until-dawn-remake-snow.jpg" alt="Escena de nieve en las montañas" loading="lazy">
+                            <img src="../assets/images/until-dawn-remake-basement.jpg" alt="Escena en el sótano" loading="lazy">
+                            <img src="../assets/images/until-dawn-remake-fire.jpg" alt="Escena del incendio" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-genre="terror" data-name="silent hill 2" data-price="79.99">
+                        <h2>Silent Hill 2 <span class="price">79,99€</span></h2>
+                        <div class="product-gallery">
+                            <img src="../assets/images/silent-hill-2-remake.jpg" alt="Portada de Silent Hill 2 Remake" loading="lazy">
+                            <img src="../assets/images/silent-hill-2-fog.jpg" alt="Escena James en Silent Hill" loading="lazy">
+                            <img src="../assets/images/silent-hill-2-remake-james.jpg" alt="Escena de la tienda" loading="lazy">
+                            <img src="../assets/images/silent-hill-2-remake-monster.jpg" alt="Encuentro con criaturas" loading="lazy">
+                            <img src="../assets/images/silent-hill-2-remake-pyramidhead.jpg" alt="Escena de pyramid head" loading="lazy">
+                            <img src="../assets/images/silent-hill-2-remake-weapon.jpg" alt="Escena James enfrentandose a un monstruo" loading="lazy">
+                        </div>
+                    </article>
+
+                    <article class="product-card" data-genre="aventura,accion" data-name="uncharted 4" data-price="79.99">
+                        <h2>Uncharted 4 <span class="price">79,99€</span></h2>
+                        <div class="product-gallery">
+                            <img src="../assets/images/uncharted-4.jpg" alt="Portada de Uncharted 4" loading="lazy">
+                            <img src="../assets/images/uncharted-4-action.jpg" alt="Nathan Drake en acción" loading="lazy">
+                            <img src="../assets/images/uncharted-4-desert.jpg" alt="Aventura en ruinas antiguas" loading="lazy">
+                            <img src="../assets/images/uncharted-4-brothers-adventure.jpeg" alt="Exploración de tesoros" loading="lazy">
+                            <img src="../assets/images/uncharted-4-nate.jpg" alt="Escenas de parkour épico" loading="lazy">
+                            <img src="../assets/images/uncharted-4-ocean.jpg" alt="Combate cinematográfico" loading="lazy">
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: About -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <svg class="footer-logo-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21,6H3C1.9,6,1,6.9,1,8v8c0,1.1,0.9,2,2,2h5.59l-2.3,2.29c-0.39,0.39-0.39,1.02,0,1.41C6.49,21.9,6.74,22,7,22s0.51-0.1,0.71-0.29L10.59,19H13v-2H3V8h18v9h-2v2h2c1.1,0,2-0.9,2-2V8C23,6.9,22.1,6,21,6z"/>
+                        </svg>
+                        <h3>Video Game Universe</h3>
+                    </div>
+                    <p class="footer-description">Tu portal definitivo para todo lo relacionado con videojuegos. Descubre, compra y conecta con la comunidad gamer más grande.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com" class="social-link" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com" class="social-link" aria-label="Facebook" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.twitter.com" class="social-link" aria-label="Twitter" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.46 6c-.85.38-1.75.64-2.7.76 1-.6 1.76-1.55 2.12-2.68-.93.55-1.95.95-3.04 1.17-.88-.94-2.13-1.53-3.51-1.53-2.66 0-4.82 2.16-4.82 4.82 0 .38.04.75.13 1.1-4-.2-7.57-2.12-9.95-5.04-.42.72-.66 1.55-.66 2.44 0 1.67.85 3.15 2.14 4.01-.79-.02-1.53-.24-2.18-.6v.06c0 2.34 1.66 4.29 3.87 4.73-.4.11-.83.17-1.27.17-.31 0-.62-.03-.92-.08.62 1.94 2.42 3.35 4.55 3.39-1.67 1.31-3.77 2.09-6.05 2.09-.39 0-.78-.02-1.17-.07 2.18 1.4 4.77 2.21 7.55 2.21 9.05 0 14-7.5 14-14 0-.21 0-.42-.02-.63.96-.70 1.8-1.56 2.46-2.55z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com" class="social-link" aria-label="YouTube" target="_blank" rel="noopener">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.10 1.49.10 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.10-3.59.10L12 19c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.10-1.49-.10-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.10 3.59-.10L12 5c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 2: Enlaces -->
+                <div class="footer-column">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./productos.html">Catálogo</a></li>
+                        <li><a href="./noticias.html">Noticias</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Categorías -->
+                <div class="footer-column">
+                    <h4>Categorías</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Acción</a></li>
+                        <li><a href="#">Aventura</a></li>
+                        <li><a href="#">RPG</a></li>
+                        <li><a href="#">Terror</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Contacto -->
+                <div class="footer-column">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            Plaza Nervión, Sevilla
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            info@videogameuniverse.com
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            +34 123 456 789
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2025 Video Game Universe. Todos los derechos reservados.</p>
+                <p class="footer-disclaimer">Los títulos de juegos, marcas e imágenes son propiedad de sus respectivos dueños.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+        </svg>
+    </button>
+
+    <!-- Scripts: carrito.js primero para CartManager global -->
+    <script src="../js/carrito.js"></script>
+    <script src="../js/productos.js"></script>
+</body>
+</html>

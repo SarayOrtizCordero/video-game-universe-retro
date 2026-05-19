@@ -1,0 +1,103 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "GTA VI: Rockstar Games confirma lanzamiento para 2025",
+      "category": "Lanzamientos",
+      "date": "2025-11-01",
+      "excerpt": "Rockstar Games ha confirmado oficialmente que Grand Theft Auto VI llegará en 2025, marcando el regreso triunfal de la saga más icónica del mundo abierto.",
+      "image": "../assets/images/grand-theft-auto-VI.jpg",
+      "author": "Equipo VGU",
+      "tags": ["GTA", "Rockstar", "Open World"],
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Silent Hill 2 Remake supera las expectativas con críticas excepcionales",
+      "category": "Reviews",
+      "date": "2025-10-30",
+      "excerpt": "El remake de Silent Hill 2 por Bloober Team ha sido aclamado por la crítica, logrando capturar la esencia del terror psicológico del original con gráficos de nueva generación.",
+      "image": "../assets/images/silent-hill-2-remake.jpg",
+      "author": "María González",
+      "tags": ["Silent Hill", "Terror", "Remake"],
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Assassin's Creed Shadows: Todo sobre el Japón feudal",
+      "category": "Avances",
+      "date": "2025-10-28",
+      "excerpt": "Ubisoft revela nuevos detalles sobre el combate dual entre ninja y samurái en la próxima entrega de Assassin's Creed ambientada en el Japón feudal.",
+      "image": "../assets/images/assassins-creed-shadows.jpg",
+      "author": "Carlos Ramírez",
+      "tags": ["Assassin's Creed", "Ubisoft", "Japón"],
+      "featured": false
+    },
+    {
+      "id": 4,
+      "title": "Metal Gear Solid Delta: Konami muestra gameplay inédito",
+      "category": "Gameplay",
+      "date": "2025-10-25",
+      "excerpt": "Konami ha publicado 15 minutos de gameplay de Metal Gear Solid Delta Snake Eater, mostrando la fidelidad al original con mejoras visuales impresionantes.",
+      "image": "../assets/images/metal-gear-solid-delta-snake-eater.jpg",
+      "author": "Pedro Sánchez",
+      "tags": ["Metal Gear", "Konami", "Stealth"],
+      "featured": false
+    },
+    {
+      "id": 5,
+      "title": "Resident Evil 9 en desarrollo: Capcom confirma nueva era del survival horror",
+      "category": "Noticias",
+      "date": "2025-10-22",
+      "excerpt": "Capcom ha confirmado que Resident Evil 9 está en pleno desarrollo, prometiendo revolucionar el género con tecnología de última generación y una historia completamente nueva.",
+      "image": "../assets/images/resident-evil-requiem.jpg",
+      "author": "Ana Martínez",
+      "tags": ["Resident Evil", "Capcom", "Horror"],
+      "featured": true
+    },
+    {
+      "id": 6,
+      "title": "Until Dawn Remake: Comparativa gráfica con el original",
+      "category": "Análisis",
+      "date": "2025-10-20",
+      "excerpt": "Analizamos las mejoras gráficas del remake de Until Dawn para PS5 y PC, con Unreal Engine 5 llevando el terror cinematográfico a un nuevo nivel.",
+      "image": "../assets/images/until-dawn-remake.jpg",
+      "author": "Luis Fernández",
+      "tags": ["Until Dawn", "Remake", "PS5"],
+      "featured": false
+    },
+    {
+      "id": 7,
+      "title": "The Witcher 4: CD Projekt Red revela a Ciri como protagonista",
+      "category": "Exclusivas",
+      "date": "2025-10-18",
+      "excerpt": "CD Projekt Red confirma que Ciri será la protagonista de The Witcher 4, marcando un nuevo capítulo en la saga con Unreal Engine 5.",
+      "image": "../assets/images/the-witcher-4.jpg",
+      "author": "Elena Torres",
+      "tags": ["The Witcher", "CD Projekt", "RPG"],
+      "featured": true
+    },
+    {
+      "id": 8,
+      "title": "Uncharted 4 se mantiene como referente del género de acción-aventura",
+      "category": "Retrospectiva",
+      "date": "2025-10-15",
+      "excerpt": "Años después de su lanzamiento, Uncharted 4: A Thief's End sigue siendo considerado uno de los mejores juegos de acción-aventura de la historia.",
+      "image": "../assets/images/uncharted-4.jpg",
+      "author": "Roberto Díaz",
+      "tags": ["Uncharted", "Naughty Dog", "Aventura"],
+      "featured": false
+    },
+    {
+      "id": 9,
+      "title": "Resident Evil 2 Remake: El survival horror que redefinió el género",
+      "category": "Retrospectiva",
+      "date": "2025-10-12",
+      "excerpt": "Repasamos cómo Resident Evil 2 Remake de 2019 estableció el estándar para los remakes modernos y revitalizó el survival horror.",
+      "image": "../assets/images/resident-evil-2-remake-art.jpg",
+      "author": "Sofía Morales",
+      "tags": ["Resident Evil", "Remake", "Clásicos"],
+      "featured": false
+    }
+  ]
+}

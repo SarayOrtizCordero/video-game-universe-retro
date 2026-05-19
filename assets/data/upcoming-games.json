@@ -1,0 +1,64 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "Grand Theft Auto VI",
+      "developer": "Rockstar Games",
+      "releaseDate": "2025-12-31",
+      "platforms": ["PlayStation", "Xbox", "PC"],
+      "image": "../assets/images/grand-theft-auto-VI.jpg",
+      "description": "La creación más ambiciosa de Rockstar Games. Vice City renace con Lucía y Jason en una experiencia revolucionaria de mundo abierto que definirá la próxima generación de videojuegos.",
+      "hypeLevel": 98,
+      "badge": "most-anticipated",
+      "trailerUrl": "https://www.youtube.com/watch?v=QdBZY2fkU-0"
+    },
+    {
+      "id": 2,
+      "title": "Resident Evil 9",
+      "developer": "Capcom",
+      "releaseDate": "2026-06-30",
+      "platforms": ["PlayStation", "Xbox", "PC"],
+      "image": "../assets/images/resident-evil-requiem.jpg",
+      "description": "La novena entrega principal de Resident Evil. Una nueva era del survival horror con tecnología de última generación, personajes complejos y la jugabilidad más inmersiva jamás vista.",
+      "hypeLevel": 94,
+      "badge": "coming-soon",
+      "trailerUrl": "#"
+    },
+    {
+      "id": 3,
+      "title": "The Witcher 4",
+      "developer": "CD Projekt Red",
+      "releaseDate": "2027-12-31",
+      "platforms": ["PlayStation", "Xbox", "PC"],
+      "image": "../assets/images/the-witcher-4.jpg",
+      "description": "Nueva saga con Ciri como protagonista en un brutal mundo de fantasía oscura. Desarrollado con Unreal Engine 5, será el juego de mundo abierto más ambicioso de The Witcher hasta la fecha.",
+      "hypeLevel": 96,
+      "badge": "tba",
+      "trailerUrl": "#"
+    },
+    {
+      "id": 4,
+      "title": "Assassin's Creed Shadows",
+      "developer": "Ubisoft",
+      "releaseDate": "2025-11-15",
+      "platforms": ["PlayStation", "Xbox", "PC"],
+      "image": "../assets/images/assassins-creed-shadows.jpg",
+      "description": "Sumérgete en el Japón feudal con dos protagonistas únicos: un ninja y un samurái. Alterna entre sigilo y combate directo en esta épica aventura histórica.",
+      "hypeLevel": 89,
+      "badge": "coming-soon",
+      "trailerUrl": "#"
+    },
+    {
+      "id": 5,
+      "title": "Metal Gear Solid Delta: Snake Eater",
+      "developer": "Konami",
+      "releaseDate": "2025-12-20",
+      "platforms": ["PlayStation", "Xbox", "PC"],
+      "image": "../assets/images/metal-gear-solid-delta-snake-eater.jpg",
+      "description": "Remake del clásico Metal Gear Solid 3. Infiltración táctica en la selva con gráficos de nueva generación manteniendo la esencia del original de Hideo Kojima.",
+      "hypeLevel": 91,
+      "badge": "coming-soon",
+      "trailerUrl": "#"
+    }
+  ]
+}
